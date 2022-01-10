@@ -1,7 +1,5 @@
 # Boberto-Launcher-Complete-Documentation
 
-# Boberto-Launcher-Complete-Documentation
-
 ### PORTUGUÊS
 
 ## O que é isso? 
