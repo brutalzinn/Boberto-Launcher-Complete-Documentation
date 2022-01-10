@@ -36,6 +36,15 @@ Boberto é o nome de um bot discord que gerencia servidores de Minecraft. O que 
 
 12. Ferramenta para gerenciar modpacks e atualizações do launcher
 
+## Por que usar o ModPack Manager?
+
+1. Fácil gerenciamento de modpacks
+2. Sincronização automática com o servidor web
+3. Gerenciador de atualização automática do launcher
+4. Instalador automático do Forge
+5. Cria o arquivo server.dat automaticamente com o ip do servidor escolhido.
+6. Fácil gerenciamento do launcher
+
 ## Tecnologias utilizadas
 
 * Docker ( servidor )
@@ -62,6 +71,15 @@ Boberto Launcher is a launcher for minecraft java edition based on [Uzurion-Laun
 
 Boberto is the name of a discord bot that manages Minecraft servers. Which means that this whole structure originally runs on Bobo's layer. But for public use, I've separated it into separate and layered projects.
 
+## Why use ModPack Manager?
+
+1. Easy modpack management
+2. Automatic synchronization with the web server
+3. Launcher auto-update manager
+4. Automatic Forge Installer
+5. Create the server.dat file automatically with the ip of the chosen server.
+6. Easy launcher management
+
 ## Why use the Boberto launcher?
 
 1. Automatic update.
@@ -87,6 +105,15 @@ Boberto is the name of a discord bot that manages Minecraft servers. Which means
 11. Modpacks can be configured for non-premium or premium accounts.
 
 12. Tool to manage modpacks and launcher updates
+
+## Pourquoi utiliser ModPack Manager ?
+
+1. Gestion facile des modpacks
+2. Synchronisation automatique avec le serveur Web
+3. Gestionnaire de mise à jour automatique du lanceur
+4. Installateur automatique de forge
+5. Créez automatiquement le fichier server.dat avec l'ip du serveur choisi.
+6. Gestion facile du lanceur
 
 ## Technologies used
 
