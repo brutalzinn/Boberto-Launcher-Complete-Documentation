@@ -36,13 +36,15 @@ Boberto é o nome de um bot discord que gerencia servidores de Minecraft. O que 
 
 12. Ferramenta para gerenciar modpacks e atualizações do launcher
 
+13. API para o gerenciamento completo das funcionalidades do launcher
+
 ## Por que usar o ModPack Manager?
 
 1. Fácil gerenciamento de modpacks
 2. Sincronização automática com o servidor web
 3. Gerenciador de atualização automática do launcher
-4. Instalador automático do Forge
-5. Cria o arquivo server.dat automaticamente com o ip do servidor escolhido.
+4. Instalador automático para Forge e Fabric
+5. Cria o arquivo server.dat automaticamente com o ip e porta do seu servidor
 6. Fácil gerenciamento do launcher
 
 ## Tecnologias utilizadas
@@ -50,13 +52,14 @@ Boberto é o nome de um bot discord que gerencia servidores de Minecraft. O que 
 * Docker ( servidor )
 * Redis ( servidor )
 * PHP ( servidor ) 
-* Python3 ( api servidor )
 * JAVASCRIPT ( Launcher )
 * NWJS ( Launcher )
 * C# NET 5.0 ( Gerenciador de ModPacks )
 
 ## Repositórios
 
+
+* [Documentação geral, guia de instalação e outras coisas.. ](https://github.com/brutalzinn/Boberto-Launcher-Complete-Documentation)
 * [Boberto Launcher](https://github.com/brutalzinn/boberto-minecraft-launcher)
 * [Boberto ModPack Creator](https://github.com/brutalzinn/CriadorDeMods)
-* [Boberto Web Server](https://github.com/brutalzinn/boberto-launcher-web) [Precisa ser atualizado]
+* [Boberto Web Server](https://github.com/brutalzinn/boberto-launcher-web)

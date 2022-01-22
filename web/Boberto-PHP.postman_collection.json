@@ -1,0 +1,597 @@
+{
+	"info": {
+		"_postman_id": "b7c4279a-38a3-4c7e-8f45-dcbb19efbdfb",
+		"name": "Boberto-PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "redis",
+			"item": [
+				{
+					"name": "redis/del",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"8a1ae76f-5c4a-4846-9082-9a74b895cd74\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/redis/del",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"redis",
+								"del"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "redis/clear",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"8a1ae76f-5c4a-4846-9082-9a74b895cd74\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/redis/clear",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"redis",
+								"clear"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "launcher",
+			"item": [
+				{
+					"name": "config",
+					"item": [
+						{
+							"name": "launcher/config",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "api-key",
+										"value": "teste",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maintenance\": \"off\",\r\n  \"maintenance_message\": \"Le server est en maintenance.<br>Merci de bien vouloir essayer ultérieurement.\",\r\n  \"offline\": \"on\",\r\n  \"client_id\": \"\",\r\n  \"game_version\": \"1.12.2\",\r\n  \"custom\": true,\r\n  \"verify\": false,\r\n  \"java\": true,\r\n  \"dataDirectory\": \".bobertolandia\",\r\n  \"ignored\": [\"options.txt\",\"log\"]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{dev}}/launcher/config",
+									"host": [
+										"{{dev}}"
+									],
+									"path": [
+										"launcher",
+										"config"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "launcher/modpacks/upload",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api-key",
+								"value": "teste",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/gedeo/OneDrive/Área de Trabalho/CriadorDeMods/CriadorDeModpacks/bin/Debug/net6.0-windows/web/files/files/modpack-boberto.zip"
+								},
+								{
+									"key": "directory",
+									"value": "modpack-boberto",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/modpacks/upload",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"modpacks",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/version/upload",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "api-key",
+								"value": "teste",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/gedeo/OneDrive/Área de Trabalho/projeto boberto launcher/dist/boberto-minecraft-launcher-linux.zip",
+										"/C:/Users/gedeo/OneDrive/Área de Trabalho/projeto boberto launcher/dist/boberto-minecraft-launcher-mac.zip",
+										"/C:/Users/gedeo/OneDrive/Área de Trabalho/projeto boberto launcher/dist/boberto-minecraft-launcher-win.zip"
+									]
+								},
+								{
+									"key": "directory",
+									"value": "modpack-boberto",
+									"type": "default",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/version/upload",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"version",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/get/version",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "API-KEY",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/launcher/version",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/update/version",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "API-KEY",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"version\": \"2.0.3\",\r\n  \"packages\": {\r\n    \"win64\": {\r\n      \"url\": \"https://launcher.webincloudy.fr/users/luuxis/launcher/launcher-download/boberto-minecraft-launcher-win.zip\"\r\n    },\r\n    \"mac64\": {\r\n      \"url\": \"https://launcher.webincloudy.fr/users/luuxis/launcher/launcher-download/boberto-minecraft-launcher-mac.zip\"\r\n    },\r\n    \"linux64\": {\r\n      \"url\": \"https://launcher.webincloudy.fr/users/luuxis/launcher/launcher-download/boberto-minecraft-launcher-linux.zip\"\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/version",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"version"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/modpacks/list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/modpacks/list",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"modpacks",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/get/news",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev}}/launcher/news/page/2/limit/3",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"news",
+								"page",
+								"2",
+								"limit",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/add/news",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Titleee 99999\",\r\n    \"body\": \"body de description\",\r\n    \"img\": \"https://raw.githubusercontent.com/luuxis/Uzurion-Launcher/master/app/assets/images/background/wallpaper.jpg\",\r\n    \"author\": \"robertocpaes\",\r\n    \"date\": \"15/01/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/news/update",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"news",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "launcher/del/news",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "API-KEY",
+									"type": "string"
+								},
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"61e374488701c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/launcher/news/del",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"launcher",
+								"news",
+								"del"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "modpackcreator",
+			"item": [
+				{
+					"name": "/modpackcreator/sync",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"author\": \"robertocpaes\",\r\n        \"datetime_creat_at\": \"2021-12-31T15:58:57.069Z\",\r\n        \"datetime_updat_at\": \"2021-12-31T16:10:41.092Z\",\r\n        \"default\": true,\r\n        \"description\": \"Modpack padrão\",\r\n        \"directory\": \"modpack-boberto\",\r\n        \"forge_version\": \"14.23.5.2860\",\r\n        \"game_version\": \"1.12.2\",\r\n        \"id\": \"1063fe34-a106-4a53-a521-2aa4c6ac9a94\",\r\n        \"img\": \"\",\r\n        \"name\": \"ModPack do boberto\",\r\n        \"premium\": false,\r\n        \"server_ip\": \"boberto.net\",\r\n        \"server_port\": \"25565\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/modpackcreator/modpacks/sync",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"modpackcreator",
+								"modpacks",
+								"sync"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/modpackcreator/append",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "teste",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"essfsggsgsg\",\r\n    \"datetime_creat_at\": \"2021-12-31T15:58:57.069Z\",\r\n    \"datetime_updat_at\": \"2021-12-31T16:10:41.092Z\",\r\n    \"default\": true,\r\n    \"description\": \"Modpack teste\",\r\n    \"directory\": \"modpack-boberto\",\r\n    \"forge_version\": \"14.23.5.2860\",\r\n    \"game_version\": \"1.12.2\",\r\n    \"id\": \"8de04e4a-0e99-484a-a522-f84113041af0\",\r\n    \"img\": \"\",\r\n    \"name\": \"ModPack do abacate\",\r\n    \"premium\": false,\r\n    \"server_ip\": \"boberto.net\",\r\n    \"server_port\": \"25565\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{dev}}/modpackcreator/modpacks/append",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"modpackcreator",
+								"modpacks",
+								"append"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
